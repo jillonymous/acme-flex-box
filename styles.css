@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  background-color: white;
+  color: darkgray;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  background-color: dodgerblue;
+  color: white;
+}
+
+nav {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:first-child {
+  font-weight: bold;
+}
+
+header > .title {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+#users-header {
+  display: flex;
+}
+
+#users-header > h1 {
+  align-self: flex-start;
+  padding: 1rem;
+}
+
+#create-a-user-form {
+  display: flex;
+  border: solid 1px black;
+  border-radius: 1.5%;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px 250px 0 350px;
+  padding: 1rem;
+}
+
+#create-a-user-form > h1 {
+  align-self: start;
+  padding: 1rem;
+}
+
+#create-a-user-form label {
+  padding: 1rem;
+}
+
+#create-a-user-form input {
+  width: 50%;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+#create-a-user-form select {
+  width: 50%;
+  justify-content: flex-end;
+  margin: .5rem;
+}
+
+.buttons {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.buttons > #save-button {
+  background-color: dodgerblue;
+  color: white;
+  margin: 0;
+}
