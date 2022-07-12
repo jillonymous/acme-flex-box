@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <meta name="viewport" content="width=device-width"
   <head>
     <title>Acme Layout</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
@@ -11,7 +12,7 @@
       </div>
       <nav>
         <div class="nav-item">
-          <a href="#">Users</a>
+          <a href="#" class="selected">Users</a>
         </div>
         <div class="nav-item">
           <a href="#">Departments</a>
@@ -37,6 +38,9 @@
           <label for="department">Department</label>
           <select name="department" id="department">
             <option value="none">--None--</option>
+            <option value="operations">Operations</option>
+            <option value="product">Product</option>
+            <option value="engineering">Engineering</option>
           </select>
         </div>
         <div class="buttons">
@@ -85,5 +89,8 @@
         </div>
       </div>
     </section>
+    <footer>
+      <p>&copy; Acme Layout</p>
+    </footer>
   </body>
 </html>

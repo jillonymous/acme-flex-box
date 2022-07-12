@@ -29,7 +29,7 @@ nav {
   color: white;
 }
 
-.nav-item:first-child {
+.selected {
   font-weight: bold;
 }
 
@@ -96,7 +96,6 @@ header > .title {
   display: flex;
   flex-flow: wrap column;
   align-items: center;
-  justify-content: space-around;
 }
 
 #users > div {
@@ -124,7 +123,10 @@ header > .title {
 @media (max-width: 400px) {
   header {
     flex-direction: column;
-    justify-content: flex-start;
+  }
+
+  #users {
+    flex-direction: column;
   }
 
   .user {
