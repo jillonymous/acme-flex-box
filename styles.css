@@ -108,7 +108,7 @@ header > .title {
 
 .user {
   display: flex;
-  flex: 0 0 33%;
+  flex: 0 0 calc(33% - 2rem);
   flex-direction: column;
   align-items: center;
   border: solid 1px black;
@@ -123,6 +123,14 @@ header > .title {
 @media (max-width: 400px) {
   header {
     flex-direction: column;
+  }
+
+  #create-a-user-form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vh;
+    margin: auto;
   }
 
   #users {
